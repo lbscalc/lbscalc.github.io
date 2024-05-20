@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>LBS Score Calculator</title>
+
+        <link href="style/main.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="shader" style="display: none;"></div>
+
+        <div class="topbar">
+            <h2 class="bar-title">LittleBigSnake Score Calculator</h2>
+            <div class="bar-btns">
+                <button class="changelog-btn" title="Changelog"><i class="fa fa-scroll"></i></button>
+            </div>
+        </div>
+
+        <div class="changelog" style="display: none;">
+            <h2 class="title">Changelog</h2>
+            <button class="btn-close-changelog"><i class="fa fa-x"></i></button>
+
+            <ul class="changelog-items">
+                <li class="changelog-item">
+                    <p class="update-version">Update 1.0.0</p>
+                    <p class="update-content">Released initial version. DM me with any feedback!</p>
+                </li>
+            </ul>
+
+            <div class="info">
+                <p class="info-text">Created by tweakn</p>
+                <div class="smol-divider"></div>
+                <p class="info-text">Current version: 1.0.0</p>
+            </div>
+        </div>
+
+        <div class="ui">
+
+            <h1 class="title">Inputs</h1>
+
+            <div class="inputs">
+                <div class="data-input">
+                    <label for="mass-input">Mass:</label>
+                    <input type="number" class="mass-input" tag="mass" />
+                </div>
+
+                <div class="data-input">
+                    <label for="medal-input">Medals:</label>
+                    <input type="number" max="10" class="medal-input" tag="medal" />
+                </div>
+
+                <div class="data-input">
+                    <label for="crown-input">Crowns:</label>
+                    <input type="number" max="100" class="crown-input" tag="crown" />
+                </div>
+
+                <div class="data-input">
+                    <label for="rk-input">Red Kills:</label>
+                    <input type="number" max="100" class="rk-input" tag="rk" />
+                </div>
+
+                <div class="data-input">
+                    <label for="bk-input">Blue Kills:</label>
+                    <input type="number" max="200" class="bk-input" tag="bk" />
+                </div>
+
+                <div class="data-input">
+                    <label for="juja-input">Jujas:</label>
+                    <input type="number" max="100" class="juja-input" tag="juja" />
+                </div>
+
+                <div class="data-input">
+                    <label for="bubble-input">Bubbles:</label>
+                    <input type="number" max="300" class="bubble-input" tag="bubble" />
+                </div>
+
+                <div class="data-input">
+                    <label for="slug-input">Slugs:</label>
+                    <input type="number" max="9999" class="slug-input" tag="slug" />
+                </div>
+
+                <div class="data-input">
+                    <label for="jg-input">Juja's Game:</label>
+                    <input type="number" max="100" class="jg-input" tag="jg" />
+                </div>
+    
+                <button class="calculate">Calculate</button>
+            </div>
+
+            <div class="divider"></div>
+
+            <h1 class="title">Results</h1>
+
+            <div class="results">
+                <div class="data-result">
+                    <p class="result-title">SCORE</p>
+                    <p class="score"></p>
+                </div>
+
+                <div class="data-result">
+                    <p class="result-title">RUBIES NEEDED</p>
+                    <p class="rubies"></p>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
